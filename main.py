@@ -4,6 +4,7 @@ from discord.ext import commands
 import os
 from dotenv import load_dotenv
 from cogs.admincog import Admincog
+from cogs.music_cog import music_cog
 
 load_dotenv()
 
@@ -11,6 +12,8 @@ intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix="$", intents=intents)
 bot.warnings = {} # guild_id : {member_id: [count, [(admin_id, reason)]]}
+
+bot.remove_command('help')
 
 @bot.event
 async def on_ready():
@@ -38,6 +41,7 @@ async def on_ready():
 
 
     await bot.add_cog(Admincog(bot))
+    await bot.add_cog(music_cog(bot))
     print(f'We have logged in as {bot.user}') 
 
 @bot.event
