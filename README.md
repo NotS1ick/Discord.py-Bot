@@ -8,9 +8,9 @@ The bot will or does have these features already:
 
 To use the bot you will need to create a .env file and put something like this in it: DISCORD_API_TOKEN='Your Token', it is the safest way to store your token on github, replit and other websites like that.
 
-You need a few requirements for this bot. To get the requirements you will need to open visual code studio or your code editing software and execute this command in the terminal: <strong>pip install -r requirements.txt</strong>
+You need a few requirements for this bot. To get the requirements you will need to open visual code studio or your code editing software and execute this command in the terminal: 
 
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>- 修改青龙 _id 字段为 id
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code> <strong>pip install -r requirements.txt</strong>
 </code></pre><div class="zeroclipboard-container">
     <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="- 修改青龙 _id 字段为 id" tabindex="0" role="button">
       <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
